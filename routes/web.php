@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('barang');
 });
 Route::resource('barang', BarangController::class);
 Route::get('delete/{id}', [BarangController::class, 'destroy']);
+Route::post('cari', [BarangController::class, 'cari']);
