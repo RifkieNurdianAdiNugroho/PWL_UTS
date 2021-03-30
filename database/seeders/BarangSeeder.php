@@ -16,7 +16,7 @@ class BarangSeeder extends Seeder
     public function run()
     {
         $data = [
-            //[
+            // [
             //     'id_barang' => '4',
             //     'kode_barang' => 'PRD004',
             //     'nama_barang' => 'Lifebuoy',

@@ -49,11 +49,11 @@ cari
 		<td>{{$barang->qty}}</td>
 		<td>
 
-		<form action="{{route('barang.destroy',['barang'=>$barang->barang])}}"method="POST">
+		<form action="{{route('barang.destroy',['barang'=>$barang->id_barang])}}"method="POST">
 
-		<a class="btn btn-info"href="{{route('barang.show',['barang'=>$barang->barang])}}">Show</a>
+		<a class="btn btn-info"href="{{route('barang.show',['barang'=>$barang->id_barang])}}">Show</a>
 
-		<a class="btn btn-primary"href="{{route('barang.edit',['barang'=>$barang->barang])}}">Edit</a>
+		<a class="btn btn-primary"href="{{route('barang.edit',['barang'=>$barang->id_barang])}}">Edit</a>
 		@csrf
 		@method('DELETE')
 		<button type="submit"class="btn btn-danger">Delete</button>
@@ -64,5 +64,5 @@ cari
 @endforeach
 
 </table>
-{{$posts->links()}}
+{{$data->links()}}
 @endsection
