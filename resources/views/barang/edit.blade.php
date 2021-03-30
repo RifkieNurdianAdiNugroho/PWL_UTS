@@ -26,7 +26,7 @@
 </div>
 <div class="form-group">
 <labelfor="kategori barang">kategori barang</label>
-<input type="kategori_barang"name="kelas"class="form-control"id="kategori_barang"value="{{$barang->kategori_barang}}"aria-describedby="kategori_barang"></div>
+<input type="kategori_barang"name="kategori_barang"class="form-control"id="kategori_barang"value="{{$barang->kategori_barang}}"aria-describedby="kategori_barang"></div>
 <div class="form-group">
 	<labelfor="harga">harga</label>
 <input type="harga"name="harga"class="form-control"id="harga"value="{{$barang->harga}}"aria-describedby="harga">
